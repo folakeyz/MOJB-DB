@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 23%;
+  border: 1px solid gainsboro;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.status {
+  width: 100%;
+  display: flex;
+  padding: 0.3rem 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.capsule {
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.capsule svg {
+  margin-right: 0.3rem;
+}
+
+.success {
+  background: #e4f8ee;
+  color: #43b8b1;
+}
+
+.pending {
+  background: #f8f5e4;
+  color: #eebc34;
+}
+.image {
+  display: flex;
+  max-height: 7rem;
+}
+.image img {
+  object-fit: cover;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.title {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.rating {
+  display: flex;
+  color: gray;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+.rating p {
+  font-size: 12px;
+}
+.rating h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.first {
+  display: flex;
+  padding: 0.5rem;
+  border-right: 1px solid gainsboro;
+  flex-direction: column;
+}
+.second {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+}

@@ -1,0 +1,106 @@
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.multiBtn {
+  display: flex;
+  background: white;
+  padding: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  height: 3rem;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+  margin-right: 2rem;
+}
+.btnBlack {
+  background: #000;
+  color: white;
+}
+.btnYellow {
+  background: rgba(255, 196, 35, 1);
+  color: #000;
+}
+.btnGray {
+  background: #e7e7e7;
+  color: #000;
+}
+
+.btnRed {
+  background: crimson;
+  color: #fff;
+}
+.btnPurple {
+  background: #640ad2;
+  color: white;
+}
+.btnPurpleOutline {
+  border: 1px solid #640ad2;
+  color: #640ad2;
+}
+.btnWhite {
+  background: white;
+  color: black;
+}
+.btnSuccess {
+  background: #28a745;
+  color: white;
+}
+.btnSuccessOutline {
+  border: 1px solid #28a745;
+  color: #28a745;
+}
+.btnSMtable {
+  height: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.loading {
+  height: 30px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner3 800ms ease infinite;
+}
+
+@keyframes spinner3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled {
+  background: whitesmoke;
+  color: black;
+  cursor: not-allowed;
+}

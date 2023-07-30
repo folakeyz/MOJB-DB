@@ -1,13 +1,132 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("./styles/auth.css");
+@import url("./styles/button.css");
+
+* {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --teal: #00a19c;
+  --green: #28a745;
+}
+
+.formPadding {
+  padding: 1rem 2rem;
+}
+
+input:focus {
+  border: 1px solid var(--green) !important;
+  outline: 1px solid var(--green) !important;
+}
+
+textarea:focus {
+  border: 1px solid var(--green) !important;
+  outline: 1px solid var(--green) !important;
+}
+
+input[type='radio']:checked {
+  background-color: var(--green) !important;
+}
+
+.appContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  background: #f7f8fa;
+  justify-content: space-around;
+}
+
+.contentsRight {
+  flex-grow: 1;
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 0.87;
+  background: white;
+}
+
+.dashboardFlex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardFlex {
+  display: flex;
+  flex: 0.75;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.activity {
+  display: flex;
+  flex: 0.25;
+  flex-direction: column;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.courseFlex {
+  display: flex;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (min-width: 1050px) and (max-width: 1300px) {
+  .contentsRight {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
 }

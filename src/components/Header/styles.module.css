@@ -1,0 +1,54 @@
+.pageTitle {
+  display: flex;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 1rem;
+}
+.titleCon {
+  display: flex;
+  flex: 0.5;
+  /* justify-content: center; */
+  align-items: center;
+}
+.title {
+  display: flex;
+  margin-right: 1rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-right: 2px solid gainsboro;
+  margin-right: 2rem;
+}
+.greeting {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+}
+.greeting h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.greeting h3 span {
+  font-size: 20px;
+}
+.greeting p {
+  font-size: 11px;
+  color: gray;
+}
+
+.search {
+  display: flex;
+  border-radius: 50px;
+  background: white;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.search input {
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+}

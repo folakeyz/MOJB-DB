@@ -1,0 +1,94 @@
+.loginContainer {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bgContainer {
+  display: flex;
+  flex: 0.7;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.overlay {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  color: white;
+  background: linear-gradient(50deg, rgba(43, 161, 86, 0.7), rgba(0, 0, 0, 0));
+  position: absolute;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.bgImages {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: url(../assets/3d.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* animation: slideBg 20s linear infinite 8s; */
+  animation-timing-function: ease-in-out;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0.3;
+  height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.8)),
+    url("../assets/spec.avif");
+}
+
+/* .pattern {
+  width: 100%;
+  height: 5rem;
+  background: url("../assets/spectrum.png");
+} */
+
+.overlay img {
+  max-height: 5rem;
+  object-fit: contain;
+}
+
+.formButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 2rem;
+}
+
+.formButtonContainer span {
+  font-size: 12px;
+  text-align: right;
+}
+
+.formButtonContainer span a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+.formPadding h1 {
+  color: var(--green);
+}
+
+.center {
+  justify-content: center;
+}
