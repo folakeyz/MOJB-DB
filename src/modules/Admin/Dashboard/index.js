@@ -8,6 +8,24 @@ import { useYouth } from "../Youth/hooks";
 const Dashboard = () => {
   const members = useMembers();
   const youth = useYouth();
+
+  function birthdaysInCurrentMonth(data) {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth() + 1; // JavaScript months are 0-based
+
+    const filteredArray = data.filter((item) => {
+      const birthDate = new Date(item.date);
+      const birthMonth = birthDate.getMonth() + 1; // JavaScript months are 0-based
+
+      return birthMonth === currentMonth;
+    });
+
+    return filteredArray;
+  }
+
+  const currentMonthBirthdays = birthdaysInCurrentMonth(members);
+  console.log(currentMonthBirthdays, "members");
+
   return (
     <PrivateLayout name="Dashboard" pageTitle="Dashboard">
       <div className="cardFlex">

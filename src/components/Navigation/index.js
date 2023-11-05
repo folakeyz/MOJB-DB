@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/cac.png";
 import HRLinks from "./HRLinks";
 
 const Navigation = ({ name, role }) => {
